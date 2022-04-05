@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Post-No-Bills-Jaffna-SemiBold';
+    src: url('../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.woff') format('woff'),
+        url('../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.svg') format('svg'),
+        url('../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot'),
+        url('../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Обнуление стилей */
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-no-bils: "Post-No-Bills-Jaffna-SemiBold", serif;
+    --font-roboto: "Roboto", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
+    --font-playfair-display: "Playfair Display",serif;
+}
+
+body {
+    margin: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: var(--font-raleway);
+    font-weight: 400;
+}
+/* Контейнер с общими размерами */
+.container{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Фон для хедера */
+.header{
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%),url(../img/rectangle.jpg);
+    height: 840px;
+}
+/* Список навигации */
+.nav-container{
+    display: flex;
+    align-items: center;
+}
+/* Логотип */
+.logo {
+    font-family: var(--font-no-bils);
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 66px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Текст под логотипом */
+.logo-text {
+    font-family: 'Raleway';
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+.nav-list{
+    margin-left: auto;
+}
+.menu{
+    display: flex;
+}
+.menu .list {
+    margin-right: 40px;
+}
+
+.list:last-child {
+    margin-right: 0;
+}
+.menu .link {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+    color: #D4C17F;
+}
+.backlight .logo{
+    color: #FFFFFF;
+}
+.backlight .logo:focus,
+.backlight .logo:hover {
+    color: #D4C17F;
+}
+
+.promo-title{
+display: flex;
+justify-content: center;
+margin-top: 200px;
+font-family: var(--font-playfair-display);
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 64px;
+color: #D4C17F;
+}
+.mous{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.address{
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+.address .list{
+    margin-right: 115px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/* Тело */
+/* Наши преимущества */
+.section-dignity{
+    background-color: #242B33;
+}
+.dignity-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.dignity-list .text{
+    width: 193px;
+}
+/* Секция квартиры */
+.apartment-section{
+    background-color: #242B33;
+}
+.apartment-list{
+    display: flex;
+}
