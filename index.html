@@ -83,7 +83,7 @@
         <!-- Нашы квартири -->
         <section class="apartment-section">
             <div class="container">
-                <h2>Наші квартири</h2>
+                <h2 class="title-section">Наші квартири</h2>
                 <ul class="apartment-list">
                     <li class="list"><img src="./img/apartments/apartments1.jpg" alt="">
                         <p>Стандарт — 1 поверх</p>
@@ -101,11 +101,11 @@
             </div>
         </section>
         <!--Таблица цен на апартаменты -->
-        <section>
+        <section class="price-section">
             <div class="container">
-                <h2>Ціни</h2>
+                <h2 class="title-section">Ціни</h2>
                 <div>
-                    <table>
+                    <table class="table-price">
                         <caption>Каталог типів квартир за ціною</caption>
                         <thead>
                             <tr>
@@ -145,25 +145,31 @@
             </div>
         </section>
         <!-- Хотите посмотреть? Форма для заполнения. -->
-        <section>
+        <section class="section-advertising">
             <div class="container">
-                <h2>Хочете подивитися?</h2>
-                <p>Житловий комплекс в історичному центрі міста HouseVOP завершив будівництво та здав об’єкт в
-                    експлаутацію
-                    11 березня 2021
-                    року.
-                    Якщо ви маєте бажання подивитися квартиру, чекаємо на Вас.</p>
-                <form id="name" name="loginFormName">
-                    <label for="name"></label>
-                    <input id="name" type="text" name="name" placeholder="Ваше ім’я" required>
-                </form>
-                <form id="loginFormId" name="loginFormName">
-                    <label for="phone"></label>
-                    <input id="phone" type="tel" name="phone" placeholder="Ваш телефон" required>
-                    <p>*Ми нікому не передаємо ваші дані.
-                        І не зберігаємо ваш номер у базу.</p>
-                    <button type="submit">Подивитись район</button>
-                </form>
+                <div class="commercial">
+                    <div class="commercial-text">
+                        <h2 class="title-section">Хочете подивитися?</h2>
+                        <p>Житловий комплекс в історичному центрі міста HouseVOP завершив будівництво та здав об’єкт в
+                            експлаутацію
+                            11 березня 2021
+                            року.
+                            Якщо ви маєте бажання подивитися квартиру, чекаємо на Вас.</p>
+                    </div>
+                    <div class="commercial-input">
+                        <form id="name" name="loginFormName">
+                            <label for="name"></label>
+                            <input id="name" type="text" name="name" placeholder="Ваше ім’я" required>
+                        </form>
+                        <form id="loginFormId" name="loginFormName">
+                            <label for="phone"></label>
+                            <input id="phone" type="tel" name="phone" placeholder="Ваш телефон" required>
+                            <p>*Ми нікому не передаємо ваші дані.
+                                І не зберігаємо ваш номер у базу.</p>
+                            <button type="submit">Подивитись район</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Видео аппартаментов -->
@@ -175,7 +181,7 @@
         <!-- Секция с картой -->
         <section>
             <div class="container">
-                <h2>Район на мапі</h2>
+                <h2 class="title-section">Район на мапі</h2>
 
             </div>
         </section>
