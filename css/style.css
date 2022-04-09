@@ -60,7 +60,7 @@ body {
 }
 /* Контейнер с общими размерами */
 .container{
-    width: 1130px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -199,8 +199,6 @@ color: #D4C17F;
     background-color: #242B33;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-.table-price{
 }
 th, td {
     width: 360px;
