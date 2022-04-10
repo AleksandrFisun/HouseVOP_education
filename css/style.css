@@ -7,17 +7,16 @@
     font-weight: normal;
     font-style: normal;
 }
-html {
-    box-sizing: border-box;
-}
 
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
-
+img{
+    max-width: 100%;
+}
 /* Обнуление стилей */
 ul,
 ol {
@@ -57,19 +56,27 @@ body {
     text-decoration: none;
     font-family: var(--font-raleway);
     font-weight: 400;
+    background-color: #242B33;
 }
 /* Контейнер с общими размерами */
 .container{
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+/* Секция с общими отступами */
+.section{
+    padding: 90px 0;
+
 }
 /* Фон для хедера */
 .header{
     background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%),url(../img/rectangle.jpg);
     height: 840px;
+    background-size: cover;
+    background-position: center;
 }
 /* Список навигации */
 .nav-container{
@@ -81,7 +88,7 @@ body {
     font-family: var(--font-no-bils);
     font-weight: 600;
     font-size: 44px;
-    line-height: 66px;
+    line-height: 1.5;
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -90,7 +97,7 @@ body {
 .logo-text {
     font-family: 'Raleway';
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
     letter-spacing: 0.12em;
     text-decoration: none;
     color: #FFFFFF;
@@ -101,6 +108,7 @@ body {
 }
 .menu{
     display: flex;
+    flex-wrap: wrap;
 }
 .menu .list {
     margin-right: 40px;
@@ -137,7 +145,7 @@ font-family: var(--font-playfair-display);
 font-style: normal;
 font-weight: 700;
 font-size: 48px;
-line-height: 64px;
+line-height: 1.5;
 color: #D4C17F;
 }
 .mous{
@@ -159,44 +167,53 @@ color: #D4C17F;
 }
 /* Тело */
 /* Наши преимущества */
-.section-dignity{
-    background-color: #242B33;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.section-feature{
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
+
 }
-.dignity-list{
+.feature-list{
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: -2rem;
 }
-.dignity-list .text{
-    width: 193px;
+.feature-item{
+    display: flex;
+    flex-basis: 15rem;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
 }
+.feature-img{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 3rem;
+}
+.feature-text{
+    text-align: center;
+}
+
 /* Секция квартиры */
 .apartment-section{
-    background-color: #242B33;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 .apartment-list{
     display: flex;
     flex-wrap: wrap;
+    margin: -1rem;
 }
-.apartment-list .list{
-    width: 535px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+.apartment-item{
+    flex-basis: calc(100% / 2);
+ padding: 1rem;
 }
-.apartment-list .list:nth-child(2n) {
-    margin-right: 0;
+.apartment-text{
+    display: block;
 }
-.apartment-list .list:nth-child(n+3) {
-    margin-bottom: 0;
-}
+
 /* Секция цен */
 .price-section{
-    background-color: #242B33;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -222,7 +239,7 @@ th, td {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 48px;
+    line-height: 1.333;
     color: #D4C17F;
 }
 .commercial-text{
